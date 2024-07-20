@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Challenge Encriptador</title>
 </head>
 <body>
-    
+    <header class="header">
+        <img class="header-logo" src="assets/logo candado.png" alt="Logo llave candado">
+    </header>
+    <main class="container">
+        <section class="container-interfaz">
+            <h1 class="container-titulo">Challenge Encriptador</h1> 
+            <textarea name="container-texto" id="container-texto" placeholder="Ingrese el texto aquí" autofocus></textarea>  
+            <div class="container-botones">
+                <h4 class="container-botones-warning">Solo letras minúsculas y sin acento</h4>
+                <a class="container-botones-encrip" href="#">Encriptar</a>
+                <a class="container-botones-desencrip" href="#">Desencriptar</a>
+            </div>
+        </section>
+        <section class="container-resultado">
+            <div class="container-resultado-texto">
+                <!-- Aqui se muestra el resultado de encriptar el texto -->
+                 <p class="container-resultado-texto-pantalla">Aqui va el resultado</p>
+            </div>
+            <div class="container-resultado-boton">
+                <a href="#" class="container-resultado-copiar" hidden>Copiar</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© Desarrollado por Guido Alfredo Albarracín - Software Developer</p>
+    </footer>
 </body>
 </html>
