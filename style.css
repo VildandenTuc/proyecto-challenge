@@ -18,7 +18,7 @@
 body{
   box-sizing: border-box;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--terciary-color);
 }
 
 .header-logo{
@@ -28,5 +28,39 @@ body{
 
 .container{
   display: flex;
-  
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 15%;
+  gap: 82px;
+}
+
+.container-titulo{
+  font-family: var(--main-font);
+  text-align: center;
+}
+.container-interfaz{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-botones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-botones-warning{
+  font-family: var(--secondary-font);
+}
+
+.footer{
+  background-color: var(--secondary-color);
+  padding: 24px;
+  text-align: center;
+  color: var(--terciary-color);
+  font-family: var(--main-font);
+  font-size: 0.5rem;
+  font-weight: 400;
 }
