@@ -19,7 +19,7 @@ body{
   box-sizing: border-box;
   background-color: var(--primary-color);
   color: var(--terciary-color);
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 .header-logo{
@@ -30,30 +30,49 @@ body{
 .container{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   padding: 5% 15%;
-  gap: 82px;
+  margin: 10% 10%;
+  gap: 32px;
+  
 }
 
 .container-titulo{
   font-family: var(--main-font);
   text-align: center;
+  margin-bottom: 30px;
 }
+
+#container-texto{
+  max-width: 100%;
+  width: 343px;
+  max-height: 100px;
+  height: 100px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
 .container-interfaz{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap:10px
 }
 
 .container-botones{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
+  margin-top: 15px;
+  /* align-content: space-between;
+  flex-wrap:wrap; */
 }
 
 .container-botones-warning{
   font-family: var(--secondary-font);
+  font-size: 12px;
 }
 
 .container-resultado{
@@ -72,6 +91,29 @@ body{
   width: 70%;
 }
 
+.container-botones-link{
+  width: 343px;
+  height: 67px;
+  background-color: var(--terciary-color);
+  text-align: center;
+  align-content: center;
+  font-size: 16px;
+  font-family: var(--main-font);
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 24px;
+}
+
+.btn-des{
+  background-color: var(--primary-color);
+  border: 1px solid var(--terciary-color);
+  width: 341px;
+  height: 65px;
+}
+
+
+
+/******************************FOOTER**************************************/
 .footer{
   background-color: var(--secondary-color);
   padding: 24px;
