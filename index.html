@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Challenge Encriptador</title>
 </head>
 <body>
@@ -14,7 +15,9 @@
         <section class="container-interfaz">
             <h1 class="container-titulo">Challenge Encriptador</h1> 
             <textarea name="container-texto" id="container-texto" placeholder="Ingrese el texto aquí" autofocus></textarea> 
-            <h5 class="container-botones-warning">Solo letras minúsculas y sin acento</h5> 
+            <h5 class="container-botones-warning"><span class="material-symbols-outlined">
+                error
+                </span>Solo letras minúsculas y sin acento</h5> 
             <div class="container-botones">
                 <!-- <h5 class="container-botones-warning">Solo letras minúsculas y sin acento</h5> -->
                 <a class="container-botones-link" href="#">Encriptar</a>
@@ -24,11 +27,10 @@
         <section class="container-resultado">
             <div class="container-resultado-texto">
                 <!-- Aqui se muestra el resultado de encriptar el texto -->
-                 <p class="container-resultado-texto-pantalla">Aqui se muestra el resultado</p>
-                 <img class="container-resultado-img" src="assets/maquina-enigma.jpg" alt="Imagen maquina enigma">
+                 <p class="container-resultado-texto-pantalla">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi culpa, aperiam illum ullam voluptates voluptatum neque repellat veritatis tempore est consectetur molestiae ipsum atque vel quas. Quibusdam nisi cum nobis!</p>
             </div>
-            <div class="container-resultado-boton">
-                <a href="#" class="container-resultado-copiar" hidden>Copiar</a>
+            <div class="container-botones">
+                <a href="#" class="container-botones-link btn-des">Copiar</a>
             </div>
         </section>
     </main>
