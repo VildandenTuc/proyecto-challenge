@@ -52,6 +52,7 @@ body{
   resize: none;
   margin-bottom: 30px;
   font-size: 24px;
+  font-family: var(--secondary-font);
 }
 
 .container-interfaz{
@@ -99,6 +100,7 @@ body{
 
 .container-resultado-texto-pantalla{
   font-size: 24px;
+  font-family: var(--secondary-font);
 }
 
 .container-botones-link{
@@ -122,9 +124,6 @@ body{
 }
 
 
-
-
-
 /******************************FOOTER**************************************/
 .footer{
   background-color: var(--secondary-color);
@@ -134,4 +133,37 @@ body{
   font-family: var(--main-font);
   font-size: 0.5rem;
   font-weight: 400;
+}
+/**************************************************************************/
+
+
+
+
+/*************************Media Queries************************************/
+
+@media (min-width: 768px) { 
+  .container-botones{
+    flex-direction: row;
+  }
+  .container-botones-link{
+    width: 333px;
+    height: 67px;
+  }
+  .container-resultado-texto{
+    
+    width: 626px; /* Ajustar según sea necesario */
+    
+  }
+  .container-botones, .tablet{
+    width: 658px;
+  }
+  .container-botones-link, .btn-des, .tablet{
+    width: 658px;
+  }
+  
+  
+}
+
+@media (min-width: 1200px) { 
+
 }
