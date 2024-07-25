@@ -30,7 +30,6 @@ body{
 .container{
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: space-between;
   padding: 5% 15%;
   margin: 10% 10%;
@@ -160,10 +159,19 @@ body{
   .container-botones-link, .btn-des, .tablet{
     width: 658px;
   }
-  
-  
 }
 
-@media (min-width: 1200px) { 
 
+
+@media (min-width: 1200px) { 
+  /* body{
+    padding: 0;
+    margin: 0;
+  } */
+  .container{
+    flex-direction: row;
+    padding: 0;
+    margin: 10% 5%;
+    gap: 80px;
+  }
 }
