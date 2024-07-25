@@ -19,7 +19,7 @@ body{
   box-sizing: border-box;
   background-color: var(--primary-color);
   color: var(--terciary-color);
-  height: 100vh;
+  
 }
 
 .header-logo{
