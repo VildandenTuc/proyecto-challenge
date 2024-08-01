@@ -25,6 +25,7 @@ body{
 .header-logo{
   width: 64px;
   height: 64px;
+  margin: 15px;
 }
 
 .container{
@@ -49,10 +50,23 @@ body{
   max-height: 100px;
   height: 100px;
   resize: none;
+  border: none;
+  text-transform: lowercase;
   margin-bottom: 30px;
+  margin-top:30px ;
   font-size: 24px;
   font-family: var(--secondary-font);
+  background-color: var(--primary-color);
+  color: var(--terciary-color);
+  text-align: center;
 }
+
+#container-texto::placeholder {color: var(--terciary-color);}
+
+#container-texto:focus {
+  outline: none;
+}
+
 
 .container-interfaz{
   display: flex;
@@ -95,6 +109,12 @@ body{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
   width: 313px; /* Ajustar según sea necesario */
   padding: 15px;
+}
+
+.img-maquina{
+  width: 50%;
+  height: 70%;
+  margin: 15px;
 }
 
 .container-resultado-texto-pantalla{
