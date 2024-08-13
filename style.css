@@ -25,7 +25,9 @@ body{
 .header-logo{
   width: 64px;
   height: 64px;
-  margin: 15px;
+  /* margin: 15px; */
+  margin-top: 24px;
+  margin-left: 12.7%;
 }
 
 .container{
