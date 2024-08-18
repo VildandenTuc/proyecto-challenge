@@ -25,7 +25,6 @@ body{
 .header-logo{
   width: 64px;
   height: 64px;
-  /* margin: 15px; */
   margin-top: 24px;
   margin-left: 12.7%;
 }
@@ -184,7 +183,7 @@ body{
   }
   .container-resultado-texto{
     
-    width: 626px; /* Ajustar según sea necesario */
+    width: 626px; 
     
   }
   .container-botones, .tablet{
@@ -199,10 +198,40 @@ body{
 
 @media (min-width: 1200px) { 
 
+  .header-logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+  }
+
   .container{
     flex-direction: row;
+    margin-bottom: 50px;
+    margin-left: 80px;
     padding: 0;
-    margin: 10% 5%;
     gap: 80px;
   }
+
+  .container-resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  #container-resultado-texto{
+    background: white;
+    background-image: url(assets/muneco.svg);
+    background-repeat: no-repeat;
+    /* position: fixed; */
+    padding: 0;
+    width: 400px;
+    height: 944px;
+    
+  }
+
+  .tablet{
+    width: 328px;
+  }
+
 }
