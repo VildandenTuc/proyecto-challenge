@@ -14,19 +14,19 @@
     <main class="container">
         <section class="container-interfaz">
             <h1 class="container-titulo">Challenge Encriptador</h1> 
-            <textarea id="container-texto" placeholder="Ingrese el texto aquí" ></textarea> 
+            <textarea class="container-texto" id="container-texto" placeholder="Ingrese el texto aquí" ></textarea> 
             <h5 class="container-botones-warning"><span class="material-symbols-outlined">
                 error
                 </span>Solo letras minúsculas y sin acento</h5> 
             <div class="container-botones">
-                <a class="container-botones-link" href="#" onclick="encriptar()">Encriptar</a>
-                <a class="container-botones-link btn-des" href="#" onclick="desencriptar()">Desencriptar</a>
+                <a class="container-botones-link" href="#" onclick="btnEncriptar()">Encriptar</a>
+                <a class="container-botones-link btn-des" href="#" onclick="btnDesencriptar()">Desencriptar</a>
             </div>
         </section>
         <section class="container-resultado">
-            <textarea id="container-resultado-texto" placeholder=""></textarea>
+            <textarea class="mensaje" id="container-resultado-texto" cols="30" rows="10"></textarea>
             <div class="container-botones tablet">
-                <a href="#" class="container-botones-link btn-des tablet">Copiar</a>
+                <a href="#" class="container-botones-link btn-des tablet" onclick="copiar()">Copiar</a>
             </div>
         </section>
     </main>

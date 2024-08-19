@@ -140,6 +140,7 @@ body{
   color: var(--secondary-color);
   text-decoration: none;
   border-radius: 24px;
+  
 }
 
 .btn-des{
@@ -147,15 +148,10 @@ body{
   border: 1px solid var(--terciary-color);
   width: 341px;
   height: 65px;
+  
 }
 
-/* .container-botones-link:hover,
-.btn-des:hover{
-  margin: 0.3%;
-  width:350px;
-  padding: 1.8%;
-}
- */
+
 /******************************FOOTER**************************************/
 .footer{
   background-color: var(--secondary-color);
@@ -173,7 +169,7 @@ body{
 
 /*************************Media Queries************************************/
 
-@media (min-width: 768px) { 
+/* @media (min-width: 768px) { 
   .container-botones{
     flex-direction: row;
   }
@@ -223,7 +219,6 @@ body{
     background: white;
     background-image: url(assets/muneco.svg);
     background-repeat: no-repeat;
-    /* position: fixed; */
     padding: 0;
     width: 400px;
     height: 944px;
@@ -235,3 +230,4 @@ body{
   }
 
 }
+ */
