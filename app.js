@@ -11,6 +11,8 @@ let mensaje = document.getElementById("container-resultado-texto");
 function btnEncriptar(){
   const textoEncriptado = encriptar(textArea.value);
   mensaje.value = textoEncriptado;
+  textArea.value = "";
+  mensaje.style.backgroundImage = "none";    //esto es para sacar la imagen del textarea
 }
 
 function encriptar(cadena){
