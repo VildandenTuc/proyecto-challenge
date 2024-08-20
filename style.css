@@ -23,8 +23,8 @@ body{
 }
 
 .header-logo{
-  width: 64px;
-  height: 64px;
+  width: 32px;
+  height: 48px;
   margin-top: 24px;
   margin-left: 12.7%;
 }
@@ -85,8 +85,6 @@ body{
   margin-top: 15px;
 }
 
-
-
 .container-botones-warning{
   font-family: var(--secondary-font);
   font-size: 12px;
@@ -119,15 +117,6 @@ body{
   padding-top: 30px; 
 }
 
-/* #container-resultado-texto::placeholder {
-  color: var(--terciary-color);
-  font-weight: 600;
-  font-size: 16px;
-  text-align: center;
-  padding-top: 30px;
-  
-}
- */
 #container-resultado-texto:focus{
   outline: none;
 }
@@ -172,65 +161,40 @@ body{
 
 /*************************Media Queries************************************/
 
-/* @media (min-width: 768px) { 
-  .container-botones{
-    flex-direction: row;
-  }
-  .container-botones-link{
-    width: 333px;
-    height: 67px;
-  }
-  .container-resultado-texto{
-    
-    width: 626px; 
-    
-  }
-  .container-botones, .tablet{
-    width: 658px;
-  }
-  .container-botones-link, .btn-des, .tablet{
-    width: 658px;
-  }
-}
-
-
-
-@media (min-width: 1200px) { 
-
+@media (min-width: 768px) { 
   .header-logo{
-    padding-top: 10px;
-    margin-left: 10px;
-    width: 10%;
+    margin-top: 73.42px;
+    margin-left: 12.7%;
   }
 
   .container{
+    margin-left: 0;
+    margin-right: 0;
+    border-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container-botones{
     flex-direction: row;
-    margin-bottom: 50px;
-    margin-left: 80px;
-    padding: 0;
-    gap: 80px;
+    align-content: center;
+    gap: 24px;
+    margin-top: 15px;
   }
 
-  .container-resultado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+  .container-botones-link{
+    width: 332px;
   }
-
+  
   #container-resultado-texto{
-    background: white;
-    background-image: url(assets/muneco.svg);
-    background-repeat: no-repeat;
-    padding: 0;
-    width: 400px;
-    height: 944px;
-    
+    width: 688px;
   }
+} 
+ 
 
-  .tablet{
-    width: 328px;
-  }
+@media (min-width: 1200px) { 
+  
+ 
 
 }
- */
+ 
