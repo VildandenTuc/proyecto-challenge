@@ -108,15 +108,18 @@ body{
   max-height: 100px;
   height: 100px; 
   resize: none;
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
   border: none;
   border-radius: 24px;
   color: var(--terciary-color);
-  padding-left: 20px;
-   
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 30px; 
 }
 
-#container-resultado-texto::placeholder {
+/* #container-resultado-texto::placeholder {
   color: var(--terciary-color);
   font-weight: 600;
   font-size: 16px;
@@ -124,7 +127,7 @@ body{
   padding-top: 30px;
   
 }
-
+ */
 #container-resultado-texto:focus{
   outline: none;
 }

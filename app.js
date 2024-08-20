@@ -8,6 +8,13 @@ let textArea = document.getElementById("container-texto");
 let mensaje = document.getElementById("container-resultado-texto"); 
 
 
+function copiar(){
+  textArea.value = mensaje.value;
+  mensaje.value = "";
+}
+
+/***********Seccion Encriptar***************/
+
 function btnEncriptar(){
   const textoEncriptado = encriptar(textArea.value);
   mensaje.value = textoEncriptado;
@@ -16,6 +23,7 @@ function btnEncriptar(){
 }
 
 function encriptar(cadena){
+  cadena = cadena.toLowerCase();
   const reemplazos = {
     'a': 'ai',
     'e': 'enter',
@@ -38,4 +46,28 @@ function encriptar(cadena){
   return cadenaEncriptada;
 }
 
+/***********Seccion Desencriptar***************/
 
+function btnDesencriptar(){
+  const textoEncriptado = desencriptar(textArea.value);
+  mensaje.value = textoEncriptado;
+  textArea.value = "";
+  //mensaje.style.backgroundImage = "url(assets/muneco.svg)";    //esto es para poner la imagen del textarea
+}
+
+function desencriptar(cadena){
+   // Crear un objeto que mapea las secuencias encriptadas a sus vocales originales
+   const reemplazos = {
+    'ai': 'a',
+    'enter': 'e',
+    'imes': 'i',
+    'ober': 'o',
+    'ufat': 'u'
+  };
+
+  // Recorrer las secuencias y reemplazarlas en la cadena original
+  for (let secuencia in reemplazos) {
+      cadena = cadena.replaceAll(secuencia, reemplazos[secuencia]);
+  }
+  return cadena;
+}
