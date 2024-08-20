@@ -6,7 +6,12 @@ La letra "u" es convertida para "ufat" */
 
 let textArea = document.getElementById("container-texto");
 let mensaje = document.getElementById("container-resultado-texto"); 
+let botonCopiar = document.getElementById("btnCopiar");
 
+window.onload = function() {
+  // Selecciona el botón por su ID y lo oculta al cargar la página
+  botonCopiar.style.display = "none";
+};
 
 function copiar(){
   textArea.value = mensaje.value;
@@ -20,6 +25,7 @@ function btnEncriptar(){
   mensaje.value = textoEncriptado;
   textArea.value = "";
   mensaje.style.backgroundImage = "none";    //esto es para sacar la imagen del textarea
+  botonCopiar.style.display = "inline-block"; //hace visible el boton copiar
 }
 
 function encriptar(cadena){
@@ -53,6 +59,7 @@ function btnDesencriptar(){
   mensaje.value = textoEncriptado;
   textArea.value = "";
   //mensaje.style.backgroundImage = "url(assets/muneco.svg)";    //esto es para poner la imagen del textarea
+  botonCopiar.style.display = "none"; //oculta el boton copiar
 }
 
 function desencriptar(cadena){
