@@ -161,8 +161,8 @@ body{
 
 /*************************Media Queries************************************/
 
-@media (min-width: 768px) { 
-  .header-logo{
+ @media (min-width: 768px) and (max-width: 1199px) { 
+   .header-logo{
     margin-top: 73.42px;
     margin-left: 12.7%;
   }
@@ -188,13 +188,16 @@ body{
   
   #container-resultado-texto{
     width: 688px;
-  }
-} 
+  } 
+
+}  
  
 
 @media (min-width: 1200px) { 
+  .container{
+    flex-direction: row;
+    margin-left: 80px;
+  }
   
- 
-
-}
+} 
  
