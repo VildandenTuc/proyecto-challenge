@@ -164,7 +164,8 @@ body{
  @media (min-width: 768px) and (max-width: 1199px) { 
    .header-logo{
     margin-top: 73.42px;
-    margin-left: 12.7%;
+    /* margin-left: 12.7%; */
+    margin-left: 5%;
   }
 
   .container{
